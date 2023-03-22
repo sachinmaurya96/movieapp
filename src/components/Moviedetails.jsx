@@ -14,11 +14,11 @@ function Moviedetails() {
   console.log(data)
   return (
     <>
-      <div className="container">
+      <div className="container details" style={{height:"100vh"}}>
         <div className="row">
-          <div className="" style={{display:"flex",justifyContent:"center", alignItems:"center",height:"100vh"}}>
+          <div className="" >
            {
-            data.map((e)=>{
+             data?.map((e)=>{
               const {Title,Year,Poster,imdbID} = e
               return <div className="card mb-3">
               <div className="row g-0">
@@ -36,7 +36,7 @@ function Moviedetails() {
                     </p>
                     <button className="btn btn-primary">Watch online</button>
                     <button className="btn btn-primary mx-2">Download</button>
-                    <button className="btn btn-primary mx-2" onClick={() => history(-1)}>Go back</button>
+                    <button className="btn btn-primary mx-2 mt-2" onClick={() => history(-1)}>Go back</button>
                   </div>
                 </div>
               </div>

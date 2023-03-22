@@ -4,7 +4,9 @@ import { useGlobalcontext } from "./context";
 import Loading from "./Loading";
 
 function Movies() {
-  const { movie ,loading} = useGlobalcontext();
+  const { movie ,loading, setPage , page} = useGlobalcontext();
+ 
+
   if(loading){
     return <Loading/>
   }
@@ -46,6 +48,10 @@ function Movies() {
           </div>
         </div>
       </section>
+      <div className="pagination mb-5">
+        {page===1? '' :<button className="btn btn-primary mx-2" onClick={()=>setPage(page-1)}>Privious</button>}
+        <button className="btn btn-primary mx-2" onClick={()=>setPage(page+1)}>Next</button>
+      </div>
     </>
   );
 }
