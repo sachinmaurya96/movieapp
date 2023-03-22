@@ -1,0 +1,21 @@
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+.card{
+    background: #262626;
+    color: #fff;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+}
+body{
+    background: #000;
+}
+.footer{
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}

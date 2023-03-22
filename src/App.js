@@ -3,6 +3,7 @@ import Home from './components/Home'
 import Error from './components/Error'
 import Moviedetails from "./components/Moviedetails"
 import { BrowserRouter, Routes , Route } from 'react-router-dom'
+import "./App.css"
 
 function App() {
   return (
