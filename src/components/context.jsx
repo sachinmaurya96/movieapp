@@ -9,8 +9,8 @@ const AppProvider = ({children})=>{
   const [loading , setLoading] = useState(true)
   const [movie, setMovie] = useState([])
   const [iserror,setIserror] = useState({show:"false", msg:""})
-  const [query,setQuery] = useState("hollywood")
-  const [page,setPage] = useState(3)
+  const [query,setQuery] = useState("new")
+  const [page,setPage] = useState(1)
   
   const getmovies = async (url)=>{
     try{
